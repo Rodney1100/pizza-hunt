@@ -13,6 +13,7 @@ mongoose.connect(process.env.MONGOOSE_URI || "mongodb://127.0.0.1/pizza-hunt", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 // use this to log mongo queries being executed!
 mongoose.set("debug", true);
 app.listen(PORT, () => console.log(`🌍 Connected on localhost:${PORT}`));
